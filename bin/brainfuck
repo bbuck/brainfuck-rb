@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby -I.
+
+require "brainfuck-rb"
+
+unless ARGV.length > 0
+  puts "USAGE"
+  puts "\tbrainfuck FILE_NAME"
+  exit
+end
+
+Brainfuck.eval(ARGV[0])
